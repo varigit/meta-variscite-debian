@@ -152,7 +152,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                       libgcc libxkbcommon0 libdebuginfod1 \
                       libssl libcrypto wpa-supplicant \
                       libpython3.10 bash-dev \
-                      libgtk-4.0  util-linux-lsblk util-linux-blkid \
+                      libgtk-4.0  util-linux-lsblk util-linux-blkid util-linux-fdisk util-linux \
                       update-rc.d \
                       init-system-helpers-service \
                       at-spi2-core apitrace \
