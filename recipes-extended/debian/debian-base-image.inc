@@ -157,7 +157,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                       init-system-helpers-service \
                       at-spi2-core apitrace \
                       fontconfig-utils fonts-liberation \
-                      libtirpc3 sed \
+                      libtirpc3 sed python3-jsonschema python3-idna \
 "
 
 RCONFLICTS:${PN} += " ${YOCTO-DEPENDS-LIST} "
