@@ -37,6 +37,7 @@ APTGET_EXTRA_PACKAGES += " \
     libogg0 \
     libxv1 \
     libxdamage1 \
+    pm-utils \
 "
 
 # GSTREAMER
