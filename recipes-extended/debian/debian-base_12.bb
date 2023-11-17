@@ -18,6 +18,9 @@ APTGET_EXTRA_PACKAGES += " \
     python3.10 \
     libglu1-mesa \
     python3.11 \
+    python3-pip \
+    python3-sympy \
+    2to3 \
     alsa-utils \
     libasound2 \
     libcairo2 \
@@ -38,6 +41,7 @@ APTGET_EXTRA_PACKAGES += " \
     libxv1 \
     libxdamage1 \
     pm-utils \
+    libltdl7 \
 "
 
 # GSTREAMER
