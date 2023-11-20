@@ -176,12 +176,15 @@ PACKAGEFUNCS =+ "prep_xattr_postinst"
 
 do_deploy_debian_base() {
     DEPLOY_DIR_BASE="${DEPLOY_DIR_IMAGE}/debian-base"
+
+    # Cleanup old installs
+    rm -rf "${DEPLOY_DIR_IMAGE}/debian-base"
+
+    # Copy image contents to deploy directory
     install -d ${DEPLOY_DIR_BASE}
-    # Use Yocto variables to refer to the image directory
     cp -a ${WORKDIR}/image/* ${DEPLOY_DIR_BASE}/
-    echo "cp -a ${WORKDIR}/image/* ${DEPLOY_DIR_BASE}/" > /tmp/debian-base
 }
 
-addtask do_deploy_debian_base after do_install before do_build
+addtask do_deploy_debian_base after do_install before do_package
 
 COMPATIBLE_MACHINE = "debian"
