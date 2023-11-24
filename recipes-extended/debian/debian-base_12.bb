@@ -42,6 +42,14 @@ APTGET_EXTRA_PACKAGES += " \
     libxdamage1 \
     pm-utils \
     libltdl7 \
+    bluez libbluetooth3 \
+    nodejs \
+"
+
+# Chromium
+APTGET_EXTRA_PACKAGES += " \
+    libnss3 \
+    libxslt1.1 \
 "
 
 # GSTREAMER
