@@ -106,6 +106,10 @@ custom_install_tasks() {
     if [ -e ${D}/usr/share/drirc.d/00-mesa-defaults.conf ]; then
         rm -f ${D}/usr/share/drirc.d/00-mesa-defaults.conf
     fi
+
+    # Disable the assignment of the fixed network interface name
+    install -d ${D}${sysconfdir}/systemd/network
+    ln -s /dev/null ${D}${sysconfdir}/systemd/network/99-default.link
 }
 
 do_install:append() {
