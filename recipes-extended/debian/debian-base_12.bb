@@ -101,6 +101,11 @@ custom_install_tasks() {
         cd ${D}${libexecdir}/${binprefix}
         ln -s ../../${bindir#*/}/fc-cache fc-cache
     fi
+
+    # Remove 00-mesa-defaults.conf to resolve conflicts with mesa
+    if [ -e ${D}/usr/share/drirc.d/00-mesa-defaults.conf ]; then
+        rm -f ${D}/usr/share/drirc.d/00-mesa-defaults.conf
+    fi
 }
 
 do_install:append() {
