@@ -1,5 +1,6 @@
 SUMMARY = "A prebuilt base image as baseline for custom work"
 require debian-base-image.inc
+inherit python3-dir
 SECTION = "devel"
 
 APTGET_EXTRA_PACKAGES_REMOVE += " \
@@ -111,6 +112,11 @@ custom_install_tasks() {
     # Disable the assignment of the fixed network interface name
     install -d ${D}${sysconfdir}/systemd/network
     ln -s /dev/null ${D}${sysconfdir}/systemd/network/99-default.link
+
+    # Add python3 site-packages search path
+    if [ -e ${D}${sysconfdir}/environment ]; then
+        echo "PYTHONPATH=\"${PYTHON_SITEPACKAGES_DIR}\"" >> ${D}${sysconfdir}/environment
+    fi
 }
 
 do_install:append() {
