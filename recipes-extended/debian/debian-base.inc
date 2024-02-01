@@ -38,6 +38,13 @@ RCONFLICTS:${PN} += "glibc eglibc"
 RREPLACES:${PN} += "glibc eglibc"
 RPROVIDES:${PN} += "glibc eglibc"
 
+# Add language support to the basic debian-base
+# rootfs covering all by default.
+APTGET_EXTRA_PACKAGES += " \
+	locales \
+	locales-all \
+"
+
 # The basic debian-base rootfs does not provide enough functionality to
 # enable ethernet or interfaces automatically in general.
 # We support ifconfig, route, busybox, udhcpc
