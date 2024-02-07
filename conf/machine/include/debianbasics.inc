@@ -28,9 +28,9 @@ GCCVERSION = '${@oe.utils.conditional( \
 # Note that the glibc is not compiled in Desktop identical fashion.
 # It remains a glibc that works for Yocto, which is good enough for
 # our purposes.
-# Debian 12: max glibc 2.36...
+# Debian 12: 2.36
 GLIBCVERSION = '${@ \
-	oe.utils.conditional("DEBIAN_TARGET_VERSION", "12", "2.35", \
+	oe.utils.conditional("DEBIAN_TARGET_VERSION", "12", "2.36", \
 	"unsupporteddebianversion", \
 	d \
 )}'
