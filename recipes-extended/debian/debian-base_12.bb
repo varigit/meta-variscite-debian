@@ -21,7 +21,10 @@ APTGET_EXTRA_PACKAGES += " \
     libglu1-mesa \
     python3.11 \
     python3-pip \
+    python3-numpy \
     python3-sympy \
+    python3-future \
+    python3-typing-extensions \
     2to3 \
     alsa-utils \
     libasound2 \
