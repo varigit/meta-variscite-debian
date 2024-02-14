@@ -158,7 +158,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                       at-spi2-core apitrace \
                       fontconfig-utils fonts-liberation \
                       libtirpc3 sed python3-jsonschema python3-idna \
-                      python3-2to3 python3-pip python3-sympy \
+                      python3-2to3 python3-pip python3-sympy python3-attrs \
                       pm-utils kbd python3-certifi python3-cffi python3-chardet python3-cryptography python3-decorator \
                       python3-future python3-ndg-httpsclient python3-opencv python3-pillow python3-ply python3-psutil \
                       python3-pyasn1 python3-pycparser python3-requests python3-six python3-typing-extensions python3-urllib3 \
