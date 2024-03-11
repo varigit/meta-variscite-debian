@@ -143,7 +143,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                      libxcb-util-dev libxcb-util1 libxcomposite-dev libxcomposite1 \
                      libxcursor-dev libxcursor1 libxkbcommon-dev libxshmfence-dev \
                      libjson-glib-1.0-0 libjson-glib-1.0-dev \
-                      gsettings-desktop-schemas adwaita-icon-theme-symbolic \
+                      gsettings-desktop-schemas adwaita-icon-theme adwaita-icon-theme-cursors adwaita-icon-theme-symbolic \
                       hicolor-icon-theme libatk-bridge-2.0-0 libxslt nss \
                       libatspi0 libgtk-3.0 gtk+3 gtk+3-dev gdk-pixbuf \
                       libxfont2-2 libfontenc1 desktop-file-utils \
