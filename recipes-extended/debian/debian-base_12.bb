@@ -12,6 +12,8 @@ APTGET_EXTRA_PACKAGES_REMOVE += " \
 "
 
 APTGET_EXTRA_PACKAGES += " \
+    gawk \
+    flex \
     libtinfo5 \
     udhcpc \
     python3.10 \
