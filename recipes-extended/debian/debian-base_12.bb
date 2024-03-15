@@ -4,9 +4,6 @@ inherit python3-dir
 SECTION = "devel"
 
 APTGET_EXTRA_PACKAGES_REMOVE += " \
-    xwayland \
-    libgpod-common \
-    whoopsie \
     libgles-dev \
     libegl-dev \
     libgl-dev \
