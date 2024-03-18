@@ -151,7 +151,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                       usbutils libusb-1.0-0 libdw1 \
                       libgcc libxkbcommon0 libdebuginfod1 \
                       libssl libcrypto wpa-supplicant \
-                      libpython3.10 bash-dev \
+                      libpython3.10 libpython3.11 libpython3 libpython3.11-1.0 bash-dev \
                       libgtk-4.0  util-linux-lsblk util-linux-blkid util-linux-fdisk util-linux \
                       update-rc.d \
                       init-system-helpers-service \
