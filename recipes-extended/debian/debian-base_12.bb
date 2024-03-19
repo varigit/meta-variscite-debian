@@ -42,6 +42,7 @@ APTGET_EXTRA_PACKAGES += " \
     libcairo2 \
     libpango1.0-dev \
     libinput-dev \
+    libncurses5 \
     libxcursor-dev \
     libxkbcommon-dev \
     libxcb-xfixes0-dev \
