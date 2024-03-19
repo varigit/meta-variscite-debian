@@ -91,7 +91,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                      libxcb-xvmc0 libxcb1 libxdamage1 libxdmcp6 libxext6 libxfixes3 libxft2 \
                      libxi6 libxml2 libxrender1 libxtst6 libxv1 libz1 libacl1 libbsd0 libevdev \
                      libffi8 libflac12 libgomp1 libmd0 libpopt0 libmpfr6 libjson-c5 libtinfo5 \
-                     libcurl4 libsodium23 libarchive libsoup \
+                     libcurl4 libsodium23 libarchive libsoup libmpc3 libmpc libmpc-dev \
                      mozjs nspr orc linux-libc-headers-dev pango pulseaudio \
                      python3-pycairo python3-pkgutil python3-dbus python3-pygobject \
                      valgrind attr-dev avahi-dev \
