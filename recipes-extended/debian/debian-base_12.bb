@@ -14,6 +14,7 @@ APTGET_EXTRA_PACKAGES_REMOVE += " \
 APTGET_EXTRA_PACKAGES += " \
     gawk \
     flex \
+    numactl \
     libtinfo5 \
     udhcpc \
     python3.10 \
@@ -30,6 +31,7 @@ APTGET_EXTRA_PACKAGES += " \
     python3-typing-extensions \
     2to3 \
     alsa-utils \
+    libnuma1 \
     libasound2 \
     libcairo2 \
     libpango1.0-dev \
