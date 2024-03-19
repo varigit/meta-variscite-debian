@@ -27,6 +27,7 @@ APTGET_EXTRA_PACKAGES += " \
     python3-future \
     python3-lxml \
     python3-protobuf \
+    python3-flatbuffers \
     python3-coloredlogs \
     python3-humanfriendly \
     python3-typing-extensions \
