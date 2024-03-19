@@ -33,6 +33,10 @@ APTGET_EXTRA_PACKAGES += " \
     python3-typing-extensions \
     2to3 \
     alsa-utils \
+    libcurl4 \
+    libsodium23 \
+    libarchive13 \
+    libsoup-3.0-0 \
     libnuma1 \
     libasound2 \
     libcairo2 \
