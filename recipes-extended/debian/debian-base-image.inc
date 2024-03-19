@@ -118,7 +118,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                       libxdmcp-dbg libxdmcp-dev libxext-dbg libxext-dev libxfixes-dbg libxfixes-dev \
                       libxft-dbg libxft-dev libxi-dev libxml2-dbg libxml2-dev libxrender-dbg libxrender-dev \
                       libxtst-dev libxv-dbg libxv-dev libz-dbg libz-dev mozjs-dev \
-                      ncurses-dev nettle-dbg nettle-dev nspr-dev openssl-dev orc-dev polkit-dev \
+                      ncurses-terminfo-base ncurses-dev nettle-dbg nettle-dev nspr-dev openssl-dev orc-dev polkit-dev \
                       python3-dbus-dev python3-pycairo-dev python3-pygobject-dev shadow-dev \
                       util-linux-dev util-macros-dev valgrind-dev \
                       wireless-tools xcb-proto-dev xorgproto-dev xtrans-dev \
