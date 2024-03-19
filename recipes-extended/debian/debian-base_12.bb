@@ -52,6 +52,7 @@ APTGET_EXTRA_PACKAGES += " \
     libltdl7 \
     bluez libbluetooth3 \
     nodejs \
+    gcc-12-plugin-dev \
 "
 
 # Chromium

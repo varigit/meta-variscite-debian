@@ -164,6 +164,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                       python3-pyasn1 python3-pycparser python3-requests python3-six python3-typing-extensions python3-urllib3 \
                       python3-lxml python3-coloredlogs python3-humanfriendly \
                       perf liberation-fonts nodejs expect bison m4 bc gawk flex \
+                      gcc-plugins \
 "
 
 RCONFLICTS:${PN} += " ${YOCTO-DEPENDS-LIST} "
