@@ -129,7 +129,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                      xkbcomp xserver-xf86-config mkfontdir mkfontscale font-util \
                      mkfontdir-dev mkfontscale-dev xkeyboard-config-dev encodings-dev \
                      font-util-dev libxkbfile-dev libfontenc-dev libxfont2-dev \
-                     libxkbfile1 libcairo-dev alsa-utils-alsactl libasound2 \
+                     libxkbfile1 libcairo-dev alsa-utils-alsactl libasound libasound2 alsa-lib \
                      libx11-locale libclutter-1.0-0 libatk-1.0-0 \
                       alsa-topology-conf alsa-ucm-conf libatopology2 libepoxy0 \
                       libicudata67 libicui18n67 libicuuc67 librsvg-2-2 libsndfile1 \
@@ -166,7 +166,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                       python3-future python3-ndg-httpsclient python3-opencv python3-pillow python3-ply python3-psutil \
                       python3-pyasn1 python3-pycparser python3-requests python3-six python3-typing-extensions python3-urllib3 \
                       python3-lxml python3-coloredlogs python3-humanfriendly python3-protobuf python3-flatbuffers \
-                      perf liberation-fonts nodejs expect bison m4 bc gawk flex numactl \
+                      perf liberation-fonts nodejs expect bison m4 bc gawk flex numactl mpg123 \
                       gcc-plugins \
                     libgpiod libgpiod2 libgpiod-tools \
                       flatbuffers libflatbuffers2 \

@@ -34,6 +34,9 @@ APTGET_EXTRA_PACKAGES += " \
     python3-typing-extensions \
     2to3 \
     alsa-utils \
+    libmpg123-0 \
+    libout123-0 \
+    libsyn123-0 \
     libcurl4 \
     libsodium23 \
     libarchive13 \
