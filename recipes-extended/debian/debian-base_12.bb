@@ -15,6 +15,7 @@ APTGET_EXTRA_PACKAGES += " \
     gawk \
     flex \
     numactl \
+    gpiod \
     libtinfo5 \
     udhcpc \
     python3.10 \
@@ -37,6 +38,7 @@ APTGET_EXTRA_PACKAGES += " \
     libsodium23 \
     libarchive13 \
     libsoup-3.0-0 \
+    libgpiod2 \
     libnuma1 \
     libasound2 \
     libcairo2 \
