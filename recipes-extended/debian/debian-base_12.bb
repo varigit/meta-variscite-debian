@@ -50,6 +50,7 @@ APTGET_EXTRA_PACKAGES += " \
     libxcb-xfixes0-dev \
     libxcb-composite0-dev \
     libxshmfence-dev \
+    libflatbuffers2 \
     libxfont2 \
     libxcvt0 \
     libepoxy0 \

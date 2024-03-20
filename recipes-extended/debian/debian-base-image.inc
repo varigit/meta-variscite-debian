@@ -169,6 +169,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                       perf liberation-fonts nodejs expect bison m4 bc gawk flex numactl \
                       gcc-plugins \
                     libgpiod libgpiod2 libgpiod-tools \
+                      flatbuffers libflatbuffers2 \
 "
 
 RCONFLICTS:${PN} += " ${YOCTO-DEPENDS-LIST} "
