@@ -74,6 +74,12 @@ APTGET_EXTRA_PACKAGES += "\
     bc db5.3 \
     xz-utils bzip2 \
 "
+
+# Add a apt local repository by using the package local-apt-repository.
+APTGET_INIT_PACKAGES += "\
+    local-apt-repository \
+"
+
 RPROVIDES:${PN}:debian += " \
 rtld(GNU_HASH) \
 libc6 \
@@ -109,6 +115,20 @@ fakeroot do_shell_prepare() {
 	cd "${D}"
 	rm -rf "*"
 	tar -C "${D}" --zstd -xf "${S}/${ROOTFS}"
+}
+
+# Use do_shell_prepare append to add some custom work before do_aptgetupdate
+# will be called
+fakeroot do_shell_prepare:append() {
+    # Create local apt repo dir
+    install -d ${D}${servicedir}/local-apt-repository
+    # Make it the highest priority
+    install -d ${D}${sysconfdir}/apt/preferences.d
+    #install -m 0644 <(echo -e "Package: *\nPin: origin\nPin-Priority: 1000\n") ${D}${sysconfdir}/apt/preferences.d/local
+    echo "Package: *" > ${D}${sysconfdir}/apt/preferences.d/local
+    echo "Pin: origin" >> ${D}${sysconfdir}/apt/preferences.d/local
+    echo "Pin-Priority: 1000" >> ${D}${sysconfdir}/apt/preferences.d/local
+    chmod 0644 ${D}${sysconfdir}/apt/preferences.d/local
 }
 
 fakeroot do_aptget_user_update:append() {
