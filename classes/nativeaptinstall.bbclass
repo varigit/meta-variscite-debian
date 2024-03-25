@@ -610,6 +610,11 @@ END_USER
 		fi
         fi
 
+	echo "DEBUG: Update local-apt-repository"
+	if [ -e "${APTGET_CHROOT_DIR}/usr/lib/local-apt-repository/rebuild" ]; then
+		chroot "${APTGET_CHROOT_DIR}" /usr/lib/local-apt-repository/rebuild
+	fi
+
 	# Prepare apt to be generically usable
 	chroot "${APTGET_CHROOT_DIR}" ${APTGET_EXECUTABLE} ${APTGET_DEFAULT_OPTS} update
 
