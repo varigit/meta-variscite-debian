@@ -24,6 +24,7 @@ APTGET_EXTRA_PACKAGES += " \
     python3-numpy \
     python3-sympy \
     python3-future \
+    python3-lxml \
     python3-typing-extensions \
     2to3 \
     alsa-utils \
