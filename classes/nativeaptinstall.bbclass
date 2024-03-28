@@ -617,7 +617,9 @@ END_USER
 
 	# Prepare apt to be generically usable
 	chroot "${APTGET_CHROOT_DIR}" ${APTGET_EXECUTABLE} ${APTGET_DEFAULT_OPTS} update
-
+	# Log overall integrity package management status
+	chroot "${APTGET_CHROOT_DIR}" ${APTGET_EXECUTABLE} ${APTGET_DEFAULT_OPTS} check || echo "DEBUG: Packages need to be fixed, continue..."
+	# Fix broken packages
 	chroot "${APTGET_CHROOT_DIR}" ${APTGET_EXECUTABLE} ${APTGET_DEFAULT_OPTS} --fix-broken install
 
 	# Yocto environment. If we kept apt packages privately from
