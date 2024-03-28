@@ -26,6 +26,7 @@ APTGET_EXTRA_PACKAGES += " \
     python3-future \
     python3-lxml \
     python3-coloredlogs \
+    python3-humanfriendly \
     python3-typing-extensions \
     2to3 \
     alsa-utils \
