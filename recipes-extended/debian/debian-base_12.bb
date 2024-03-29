@@ -7,6 +7,7 @@ APTGET_EXTRA_PACKAGES_REMOVE += " \
     libgles-dev \
     libegl-dev \
     libgl-dev \
+    libwayland-bin \
     libwayland-dev \
     wayland-protocols \
 "
