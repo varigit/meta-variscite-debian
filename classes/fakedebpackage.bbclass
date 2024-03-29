@@ -118,8 +118,7 @@ python create_fakedebpackage() {
         with open(f'{docdir}/{file}', 'w') as f:
             text = d.getVar(f'FAKEDEBPKG_{file.upper()}', True)
             f.write(text.encode().decode('unicode_escape'))
-    
-    os.chdir(workdir)
+
     subprocess.check_output("PATH=\"%s\" %s -b %s %s" % (d.getVar("PATH"), 'dpkg-deb', workdir + '/packagedata', workdir),
                             stderr=subprocess.STDOUT,
                             shell=True)
