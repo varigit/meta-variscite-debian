@@ -5,7 +5,8 @@ ARCH=arm64
 RELEASE=bookworm
 TARGET_DIR=./debian-rootfs
 MIRROR=http://deb.debian.org/debian
-TARBALL=debian-${RELEASE}-rootfs.tar.zst
+DATECODE=1
+TARBALL=debian-${RELEASE}-rootfs-$(date +"%m-%d-%Y")-${DATECODE}.tar.zst
 
 # Run debootstrap
 sudo debootstrap --arch=$ARCH --variant=minbase --verbose --no-check-gpg $RELEASE $TARGET_DIR $MIRROR
