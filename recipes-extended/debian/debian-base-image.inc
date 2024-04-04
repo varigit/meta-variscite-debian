@@ -3,8 +3,8 @@ require debian-license.inc
 SECTION = "devel"
 
 # Desktop 22.04 baseline
-SRC_URI[md5sum] = "a884ffe21886b29bf936499552edac91"
-SRC_URI[sha256sum] = "4ceb05450dd579ef83d2706fa61185a9e9a8718359488c1fc2b5b8d8abc1ebc7"
+SRC_URI[md5sum] = "1b002df0ac3dd86636f813b802002ad1"
+SRC_URI[sha256sum] = "81ff70a85aef8cd7c6a619a51ad781bff4a58ef6ebf9bad69b6360526162691a"
 
 require debian-base.inc
 

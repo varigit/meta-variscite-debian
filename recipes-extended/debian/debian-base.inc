@@ -9,7 +9,7 @@ APTGET_CHROOT_DIR = "${D}"
 S = "${WORKDIR}/rootfs"
 B = "${S}"
 
-ROOTFS="debian-bookworm-rootfs.tar.zst"
+ROOTFS="debian-bookworm-rootfs-04-04-2024-1.tar.zst"
 SRC_URI = " \
 	https://variscite-public.nyc3.digitaloceanspaces.com/Debian/${ROOTFS};unpack=0;subdir=rootfs \
 	file://fstab \
