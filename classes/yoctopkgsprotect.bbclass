@@ -61,7 +61,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'kernel-6.1.36*': '',
         'kernel-devicetree': '',
         'kernel-dev': '',
-        'kernel-devsrc': '',
+        'kernel-devsrc': [('linux-headers','6.1.36')],
         'kernel-image*': '',
         'kernel-module*': '',
         'keyctl-caam': '',
