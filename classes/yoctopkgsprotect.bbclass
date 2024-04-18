@@ -90,6 +90,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'linux-imx-headers-dev': '',
         'linux-imx-headers': '',
         'mesa-megadriver': [('libgl1-mesa-dri','22.3.6')],
+        'nn-imx': '',
         'nxp-wlan-sdk': '',
         'onnxruntime': [('python3-onnx','1.12.0'), ('libonnx','1.12.0')],
         'onnxruntime-tests': [('libonnx-testdata','1.12.0')],
