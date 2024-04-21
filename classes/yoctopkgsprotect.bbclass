@@ -67,6 +67,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'imx-parser': '',
         'imx-vpu-hantro*': '',
         'iw612-utils': '',
+        'isp-imx*': '',
         'kernel-6.1.36*': '',
         'kernel-devicetree': '',
         'kernel-dev': '',
