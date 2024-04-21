@@ -44,6 +44,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'eiq-examples': '',
         'ethos-u-driver-stack': '',
         'ethos-u-vela': '',
+        'firmware-imx-*': '',
         'firmware-nxp-wifi-nxp*': '',
         'freertos-variscite*': '',
         'gstreamer1.0': [('gstreamer1.0-tools','1.22.0'), ('gir1.2-gstreamer-1.0','1.22.0'), ('libgstreamer1.0-0','1.22.0')],
