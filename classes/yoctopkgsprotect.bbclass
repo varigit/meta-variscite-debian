@@ -92,6 +92,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'libubootenv0': [('libubootenv0.1','0.3.2')],
         'libubootenv-bin': [('libubootenv-tool','0.3.2')],
         'libweston-11-0': [('libweston-10-0','10.0.1')],
+        'linux-firmware-ath10k*': '',
         'linux-firmware-bcm4339': [('firmware-brcm80211','20230210')],
         'linux-firmware-bcm43430': [('firmware-brcm80211','20230210')],
         'linux-firmware-broadcom-license': '',
