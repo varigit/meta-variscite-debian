@@ -122,6 +122,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'swupdate-www': [('swupdate-www','2022.12')],
         'systemd-gpuconfig': '',
         'tensorflow-lite-ethosu-delegate': '',
+        'tensorflow-lite-vx-delegate': '',
         'torchvision': [('python3-torchvision','0.14.1')],
         'u-boot-splash': '',
         'u-boot-variscite-env': '',
