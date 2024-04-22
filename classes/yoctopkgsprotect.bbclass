@@ -100,6 +100,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'linux-imx-headers-dev': '',
         'linux-imx-headers': '',
         'mesa-megadriver': [('libgl1-mesa-dri','22.3.6')],
+        'nlohmann-json': '',
         'nn-imx': '',
         'nxp-wlan-sdk': '',
         'onnxruntime': [('python3-onnx','1.12.0'), ('libonnx','1.12.0')],
@@ -109,10 +110,13 @@ python create_yoctopkgsprotect_debpackage()  {
         'optee-client': [('libckteec0','3.19.0'), ('tee-supplicant','3.19.0')],
         'packagegroup*': '', # Ignore any packagegroup packages as those are usually empty
         'pm-utils-variscite': '',
+        'pugixml': '',
         'python3-fcntl': '',
         'python3-flatbuffers': [('python3-flatbuffers','2.0.8')],
         'python3-protobuf': [('python3-protobuf','3.21.12')],
         'pytorch': [('python3-torch','1.13.1')],
+        'rapid*': '', # rapidjson, rapidopencl, rapidopenvx, rapidvulkan
+        'stb': '',
         'spidev-test': '',
         'swupdate': [('swupdate','2022.12'), ('libswupdate0.1','2022.12')],
         'swupdate-www': [('swupdate-www','2022.12')],
