@@ -123,6 +123,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'systemd-gpuconfig': '',
         'tensorflow-lite-ethosu-delegate': '',
         'tensorflow-lite-vx-delegate': '',
+        'tim-vx': '',
         'torchvision': [('python3-torchvision','0.14.1')],
         'u-boot-splash': '',
         'u-boot-variscite-env': '',
