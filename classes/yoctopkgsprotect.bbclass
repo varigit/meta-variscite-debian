@@ -105,6 +105,8 @@ python create_yoctopkgsprotect_debpackage()  {
         'onnxruntime': [('python3-onnx','1.12.0'), ('libonnx','1.12.0')],
         'onnxruntime-tests': [('libonnx-testdata','1.12.0')],
         'ot-daemon': '',
+        'optee-*': '', # optee-os, optee-test
+        'optee-client': [('libckteec0','3.19.0'), ('tee-supplicant','3.19.0')],
         'packagegroup*': '', # Ignore any packagegroup packages as those are usually empty
         'pm-utils-variscite': '',
         'python3-fcntl': '',
