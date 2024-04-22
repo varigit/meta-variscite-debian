@@ -120,6 +120,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'spidev-test': '',
         'swupdate': [('swupdate','2022.12'), ('libswupdate0.1','2022.12')],
         'swupdate-www': [('swupdate-www','2022.12')],
+        'systemd-gpuconfig': '',
         'tensorflow-lite-ethosu-delegate': '',
         'torchvision': [('python3-torchvision','0.14.1')],
         'u-boot-splash': '',
