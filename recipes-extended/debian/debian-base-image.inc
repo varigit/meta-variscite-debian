@@ -30,6 +30,7 @@ RPROVIDES:${PN}:debian += " \
 "
 
 APTGET_EXTRA_PACKAGES += " \
+    libc++1-15 \
     libdebuginfod1 \
 "
 
@@ -101,7 +102,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                      cracklib-dev cryptodev-linux-dev curl-devflac-dev \
                      flex-dev glib-networking gobject-introspection-dev \
                       icu-dev lame-dev libatomic-dev libatomic-ops-dev \
-                      libc6-dev libc6-dbg libcap-dbg libcap-dev libcap-ng-dev \
+                      libc6-dev libc6-dbg libcxx libcap-dbg libcap-dev libcap-ng-dev \
                       perl perl-dev libcrypt libcrypt-dbg libcrypt-dev \
                       libdaemon-dev libdbus-glib-1-dev libexpat-dbg libexpat-dev \
                       libffi-dbg libffi-dev libfontconfig-dbg libfontconfig-dev \
