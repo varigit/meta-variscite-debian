@@ -12,6 +12,7 @@ FAKEDEBPKG_MAINTAINER = "Variscite Ltd."
 FAKEDEBPKG_DESC_SHORT = "Fake package as a placeholder for ressources provided by Yocto"
 
 python create_yoctopkgsprotect_debpackage()  {
+    import re
     from oe.rootfs import image_list_installed_packages
 
     # Yocto, Debian equivalent packages list map. Each Yocto package should have a
@@ -44,14 +45,14 @@ python create_yoctopkgsprotect_debpackage()  {
         'eiq-examples': '',
         'ethos-u-driver-stack': '',
         'ethos-u-vela': '',
-        'firmware-imx-*': '',
-        'firmware-nxp-wifi-nxp*': '',
-        'freertos-variscite*': '',
+        'firmware-imx-.*': '',
+        'firmware-nxp-wifi-nxp.*': '',
+        'freertos-variscite.*': '',
         'gstreamer1.0': [('gstreamer1.0-tools','1.22.0'), ('gir1.2-gstreamer-1.0','1.22.0'), ('libgstreamer1.0-0','1.22.0')],
-        'gstreamer1.0-plugins-bad*': [('gstreamer1.0-plugins-bad','1.22.0')],
-        'gstreamer1.0-plugins-base*': [('gstreamer1.0-plugins-base','1.22.0')],
-        'gstreamer1.0-plugins-good*': [('gstreamer1.0-plugins-good','1.22.0')],
-        'gstreamer1.0-rtsp-server*': [('gstreamer1.0-rtsp','1.22.0')],
+        'gstreamer1.0-plugins-bad.*': [('gstreamer1.0-plugins-bad','1.22.0')],
+        'gstreamer1.0-plugins-base.*': [('gstreamer1.0-plugins-base','1.22.0')],
+        'gstreamer1.0-plugins-good.*': [('gstreamer1.0-plugins-good','1.22.0')],
+        'gstreamer1.0-rtsp-server.*': [('gstreamer1.0-rtsp','1.22.0')],
         'gtk+3-gles': '', # [('libgtk-3','3.24.38'),('libgtk-3-dev','3.24.38')], Special case: Yocto only provides libgdk-3 and libgtk-3 libs, rest comes from Debian
         'imx-alsa-plugins': '',
         'imx-dsp': '',
@@ -65,15 +66,15 @@ python create_yoctopkgsprotect_debpackage()  {
         'imx-gst1.0-plugin': '',
         'imx-lib': '',
         'imx-parser': '',
-        'imx-vpu-hantro*': '',
+        'imx-vpu-hantro.*': '',
         'iw612-utils': '',
-        'isp-imx*': '',
-        'kernel-6.1.36*': '',
+        'isp-imx.*': '',
+        'kernel-6.1.36.*': '',
         'kernel-devicetree': '',
         'kernel-dev': '',
         'kernel-devsrc': [('linux-headers','6.1.36')],
-        'kernel-image*': '',
-        'kernel-module*': '',
+        'kernel-image.*': '',
+        'kernel-module.*': '',
         'keyctl-caam': '',
         'lib-aac-dec-arm-elinux3': '',
         'libbz2-1': '', # Yocto: 1.0.4, Debian: 1.0.8, allow co-existence
@@ -84,7 +85,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'libg2d2': '',
         'libglapi0': [('libglapi-mesa','22.3.6-1+deb12u1')],
         'libgles2-mesa': [('libgles2-mesa','22.3.6')],
-        'libgst*': [('libgstreamer-plugins-base1.0-0','1.22.0')], 
+        'libgst.*': [('libgstreamer-plugins-base1.0-0','1.22.0')], 
         'lib-mp3-dec-arm-elinux2': '',
         'lib-oggvorbis-dec-arm-elinux2': '',
         'librecorder-engine-1.0-0': '',
@@ -92,9 +93,8 @@ python create_yoctopkgsprotect_debpackage()  {
         'libubootenv0': [('libubootenv0.1','0.3.2')],
         'libubootenv-bin': [('libubootenv-tool','0.3.2')],
         'libweston-11-0': [('libweston-10-0','10.0.1')],
-        'linux-firmware-ath10k*': '',
-        'linux-firmware-bcm4339': [('firmware-brcm80211','20230210')],
-        'linux-firmware-bcm43430': [('firmware-brcm80211','20230210')],
+        'linux-firmware-ath10k.*': '',
+        'linux-firmware-bcm43.*': [('firmware-brcm80211','20230210')],
         'linux-firmware-broadcom-license': '',
         'linux-firmware-cypress-license': '',
         'linux-imx-headers-dev': '',
@@ -106,16 +106,16 @@ python create_yoctopkgsprotect_debpackage()  {
         'onnxruntime': [('python3-onnx','1.12.0'), ('libonnx','1.12.0')],
         'onnxruntime-tests': [('libonnx-testdata','1.12.0')],
         'ot-daemon': '',
-        'optee-*': '', # optee-os, optee-test
+        'optee-.*': '', # optee-os, optee-test
         'optee-client': [('libckteec0','3.19.0'), ('tee-supplicant','3.19.0')],
-        'packagegroup*': '', # Ignore any packagegroup packages as those are usually empty
+        'packagegroup.*': '', # Ignore any packagegroup packages as those are usually empty
         'pm-utils-variscite': '',
         'pugixml': '',
         'python3-fcntl': '',
         'python3-flatbuffers': [('python3-flatbuffers','2.0.8')],
         'python3-protobuf': [('python3-protobuf','3.21.12')],
         'pytorch': [('python3-torch','1.13.1')],
-        'rapid*': '', # rapidjson, rapidopencl, rapidopenvx, rapidvulkan
+        'rapid.*': '', # rapidjson, rapidopencl, rapidopenvx, rapidvulkan
         'stb': '',
         'spidev-test': '',
         'swupdate': [('swupdate','2022.12'), ('libswupdate0.1','2022.12')],
@@ -132,7 +132,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'udev-extraconf': '',
         'udev-rules-imx': '',
         'usleep': '',
-        'var-*': '',
+        'var-.*': '',
         'wayland-dev': [('libwayland-dev','1.21.0')],
         'wayland-tools': [('libwayland-bin','1.21.0')],
         'wayland-protocols': [('wayland-protocols','1.31')],
@@ -146,17 +146,20 @@ python create_yoctopkgsprotect_debpackage()  {
     }
 
     def lookup_debpkg_equiv(yoctopkg_name):
-        key = yoctopkg_name
+        pkg = yoctopkg_name
         dictionary = debpkgs_equivs
 
-        if key in dictionary:
-            return dictionary[key]
-        for key_any, value in dictionary.items():
-            if key_any.endswith('*') and key.startswith(key_any[:-1]):
-                bb.debug(1, f"Considering wildcard'ed package name {key_any} for package {key}")
+        if pkg in dictionary:
+            bb.debug(1, f"Found Debian package equivalent entry for package {pkg}")
+            return dictionary[pkg]
+
+        for key, value in dictionary.items():
+            regex = re.compile(key)
+            if regex.match(pkg):
+                bb.debug(1, f"Found Debian package equivalent with {key} for package {pkg}")
                 return value
 
-        bb.warn(f"Could not find Debian package equivalent(s) for Yocto package '{key}'")
+        bb.warn(f"Could not find Debian package equivalent(s) for Yocto package '{pkg}'")
         return None
 
     workdir = os.path.join(d.expand('${WORKDIR}'), 'yoctopkgsprotect')
