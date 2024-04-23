@@ -86,6 +86,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'libdrm2': [('libdrm2','2.4.114')],
         'libdrm-vivante1': '',
         'libegl-mesa': [('libegl-mesa0','22.3.6')],
+        'libfslvpuwrap3': '',
         'libgbm1': [('libgbm1','22.3.6')],
         '^libg2d\d*(?:-dev)?$': '', # libg2d2, libg2d-dev
         'libglapi0': [('libglapi-mesa','22.3.6-1+deb12u1')],
