@@ -92,6 +92,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'libglapi0': [('libglapi-mesa','22.3.6-1+deb12u1')],
         'libgles2-mesa': [('libgles2-mesa','22.3.6')],
         'libgst.*': [('libgstreamer-plugins-base1.0-0','1.22.0')], 
+        'libfmt10': '',
         '^libopencv-.*407$': [('libopencv-core406','4.6.0'), ('libopencv-highgui406','4.6.0'), ('libopencv-imgcodecs406','4.6.0'), ('libopencv-imgproc406','4.6.0')], # libopencv-core407, libopencv-highgui407, libopencv-imgcodecs407, libopencv-imgproc407
         'lib-mp3-dec-arm-elinux2': '',
         'lib-oggvorbis-dec-arm-elinux2': '',
