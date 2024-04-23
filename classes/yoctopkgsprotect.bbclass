@@ -82,6 +82,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'lib-aac-dec-arm-elinux3': '',
         'libbz2-1': '', # Yocto: 1.0.4, Debian: 1.0.8, allow co-existence
         'libconfig11': '', # Yocto: libconfig11, Debian libconfig9 (no equiv. upstream package)
+        '^libdaa3840-30mc\d*(?:-dev)?$': '', # libdaa3840-30mc1, libdaa3840-30mc-dev
         'libdrm2': [('libdrm2','2.4.114')],
         'libegl-mesa': [('libegl-mesa0','22.3.6')],
         'libgbm1': [('libgbm1','22.3.6')],
