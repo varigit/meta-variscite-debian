@@ -126,6 +126,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'tim-vx': '',
         'tinycompress': '',
         'torchvision': [('python3-torchvision','0.14.1')],
+        'tvm': '',
         'u-boot-splash': '',
         'u-boot-variscite-env': '',
         'udev-extraconf': '',
