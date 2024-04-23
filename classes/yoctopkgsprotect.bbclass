@@ -117,6 +117,8 @@ python create_yoctopkgsprotect_debpackage()  {
         'python3-protobuf': [('python3-protobuf','3.21.12')],
         'pytorch': [('python3-torch','1.13.1')],
         'rapid.*': '', # rapidjson, rapidopencl, rapidopenvx, rapidvulkan
+        'sof-imx': '',
+        'sof-zephyr': '',
         'stb': '',
         'spidev-test': '',
         'swupdate': [('swupdate','2022.12'), ('libswupdate0.1','2022.12')],
@@ -143,6 +145,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'weston': [('weston','10.0.1'), ('libweston-10-0','10.0.1')],
         'weston-xwayland': [('libweston-10-0','10.0.1')],
         'xwayland': [('xwayland','22.1.9')],
+        'zephyr-demo-imx': '',
         'zeromq': [('libzmq5','4.3.4')],
     }
 
