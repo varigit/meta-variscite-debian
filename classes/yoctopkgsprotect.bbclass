@@ -41,6 +41,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'debian-base-dbg': '',
         'debian-base-dev': '',
         'debian-base-doc': '',
+        'devil': [('libdevil-dev','1.7.8')],
         'chromium-ozone-wayland': [('chromium','123.0.6312.122')],
         'eiq-examples': '',
         'ethos-u-driver-stack': '',
