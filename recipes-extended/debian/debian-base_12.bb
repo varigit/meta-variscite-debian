@@ -49,6 +49,8 @@ APTGET_EXTRA_PACKAGES += " \
     libpango1.0-dev \
     libinput-dev \
     libncurses5 \
+    libtinyxml2-9 \
+    libtinyxml2-dev \
     libxcursor-dev \
     libxkbcommon-dev \
     libxcb-xfixes0-dev \
