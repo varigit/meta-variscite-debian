@@ -48,6 +48,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'firmware-imx-.*': '',
         'firmware-nxp-wifi-nxp.*': '',
         'freertos-variscite.*': '',
+        'gputop': '',
         'gstreamer1.0': [('gstreamer1.0-tools','1.22.0'), ('gir1.2-gstreamer-1.0','1.22.0'), ('libgstreamer1.0-0','1.22.0')],
         'gstreamer1.0-plugins-bad.*': [('gstreamer1.0-plugins-bad','1.22.0')],
         'gstreamer1.0-plugins-base.*': [('gstreamer1.0-plugins-base','1.22.0')],
