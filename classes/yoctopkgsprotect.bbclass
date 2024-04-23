@@ -97,6 +97,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'lib-oggvorbis-dec-arm-elinux2': '',
         'libgpuperfcnt1.4.0': '',
         'libhantro-vc8000e1': '',
+        'libopenvg1': '',
         'librecorder-engine-1.0-0': '',
         'libtensorflow-lite2.11.1': '',
         'libubootenv0': [('libubootenv0.1','0.3.2')],
