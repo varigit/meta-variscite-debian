@@ -92,6 +92,8 @@ python create_yoctopkgsprotect_debpackage()  {
         '^libopencv-.*407$': [('libopencv-core406','4.6.0'), ('libopencv-highgui406','4.6.0'), ('libopencv-imgcodecs406','4.6.0'), ('libopencv-imgproc406','4.6.0')], # libopencv-core407, libopencv-highgui407, libopencv-imgcodecs407, libopencv-imgproc407
         'lib-mp3-dec-arm-elinux2': '',
         'lib-oggvorbis-dec-arm-elinux2': '',
+        'libgpuperfcnt1.4.0': '',
+        'libhantro-vc8000e1': '',
         'librecorder-engine-1.0-0': '',
         'libtensorflow-lite2.11.1': '',
         'libubootenv0': [('libubootenv0.1','0.3.2')],
