@@ -50,6 +50,8 @@ APTGET_EXTRA_PACKAGES += " \
     libpango1.0-dev \
     libinput-dev \
     libncurses5 \
+    libtbb12 \
+    libtbbmalloc2 \
     libtinyxml2-9 \
     libtinyxml2-dev \
     libxcursor-dev \
