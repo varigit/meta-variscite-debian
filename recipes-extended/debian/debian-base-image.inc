@@ -106,7 +106,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                       libdaemon-dev libdbus-glib-1-dev libexpat-dbg libexpat-dev \
                       libffi-dbg libffi-dev libfontconfig-dbg libfontconfig-dev \
                       libfreetype-dbg libfreetype-dev libfribidi-dbg libfribidi-dev \
-                      libgcc-s-dbg cpp libgdk-pixbuf-2.0-dbg libgdk-pixbuf-2.0-dev \
+                      libgcc-s-dbg libgcc-s-dev cpp libgdk-pixbuf-2.0-dbg libgdk-pixbuf-2.0-dev \
                       libglib-2.0-dbg libglib-2.0-dev libgmp-dbg libgmp-dev libgnutls-dev \
                       libgudev-1.0-dbg libgudev-1.0-dev libical-dev libice-dev libidn2-dbg libidn2-dev \
                       libjpeg-dbg libjpeg-dev libmp3lame-dev libnss-mdns libogg-dbg libogg-dev libpam-dev \
