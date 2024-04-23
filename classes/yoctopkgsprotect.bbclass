@@ -93,6 +93,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'libubootenv0': [('libubootenv0.1','0.3.2')],
         'libubootenv-bin': [('libubootenv-tool','0.3.2')],
         'libweston-11-0': [('libweston-10-0','10.0.1')],
+        '^lib.*-imx(?:-dev)?$': '', # e.g. libclc-imx, libegl-imx, libgal-imx, libgbm-imx, libgbm-imx-dev ...
         'linux-firmware-ath10k.*': '',
         'linux-firmware-bcm43.*': [('firmware-brcm80211','20230210')],
         'linux-firmware-broadcom-license': '',
