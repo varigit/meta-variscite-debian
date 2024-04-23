@@ -45,6 +45,7 @@ APTGET_EXTRA_PACKAGES += " \
     libgpiod2 \
     libnuma1 \
     libasound2 \
+    libassimp5 \
     libcairo2 \
     libpango1.0-dev \
     libinput-dev \

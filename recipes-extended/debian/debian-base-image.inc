@@ -171,7 +171,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                     libgpiod libgpiod2 libgpiod-tools \
                       flatbuffers libflatbuffers2 \
                     libtinyxml2 libtinyxml2-9 libtinyxml2-dev \
-                      tiff libtiff6 \
+                      tiff libtiff6 libassimp5 \
 "
 
 RCONFLICTS:${PN} += " ${YOCTO-DEPENDS-LIST} "
