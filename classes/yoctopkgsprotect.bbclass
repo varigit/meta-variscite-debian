@@ -99,6 +99,8 @@ python create_yoctopkgsprotect_debpackage()  {
         'libtensorflow-lite2.11.1': '',
         'libubootenv0': [('libubootenv0.1','0.3.2')],
         'libubootenv-bin': [('libubootenv-tool','0.3.2')],
+        'libvulkan-vsi1': '',
+        'libvulkan1': '',
         'libweston-11-0': [('libweston-10-0','10.0.1')],
         '^lib.*-imx(?:-dev)?$': '', # e.g. libclc-imx, libegl-imx, libgal-imx, libgbm-imx, libgbm-imx-dev ...
         'linux-firmware-ath10k.*': '',
