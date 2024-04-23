@@ -84,6 +84,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'libconfig11': '', # Yocto: libconfig11, Debian libconfig9 (no equiv. upstream package)
         '^libdaa3840-30mc\d*(?:-dev)?$': '', # libdaa3840-30mc1, libdaa3840-30mc-dev
         'libdrm2': [('libdrm2','2.4.114')],
+        'libdrm-vivante1': '',
         'libegl-mesa': [('libegl-mesa0','22.3.6')],
         'libgbm1': [('libgbm1','22.3.6')],
         '^libg2d\d*(?:-dev)?$': '', # libg2d2, libg2d-dev
