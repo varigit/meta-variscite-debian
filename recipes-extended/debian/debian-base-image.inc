@@ -127,6 +127,7 @@ YOCTO-DEPENDS-LIST = " glib-2.0 libglib-2.0-0 libglib-2.0-utils python3-core pyt
                       util-linux-dev util-macros-dev valgrind-dev \
                       wireless-tools xcb-proto-dev xorgproto-dev xtrans-dev \
                      rgb xkeyboard-config xf86-input-libinput libinput10 \
+                      libxmu6 libxt6 setxkbmap xkbevd xkbutils xkbprint \
                      xkbcomp xserver-xf86-config mkfontdir mkfontscale font-util \
                      mkfontdir-dev mkfontscale-dev xkeyboard-config-dev encodings-dev \
                      font-util-dev libxkbfile-dev libfontenc-dev libxfont2-dev \
