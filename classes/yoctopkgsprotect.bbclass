@@ -89,6 +89,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'libdrm2': [('libdrm2','2.4.114')],
         'libdrm-vivante1': '',
         'libegl-mesa': [('libegl-mesa0','22.3.6')],
+        'libexif12': '',
         'libfslvpuwrap3': '',
         'libgbm1': [('libgbm1','22.3.6')],
         '^libg2d\d*(?:-dev)?$': '', # libg2d2, libg2d-dev
@@ -99,10 +100,12 @@ python create_yoctopkgsprotect_debpackage()  {
         '^libopencv-.*407$': '', # libopencv-core407, libopencv-highgui407, libopencv-imgcodecs407, libopencv-imgproc407
         'lib-mp3-dec-arm-elinux2': '',
         'lib-oggvorbis-dec-arm-elinux2': '',
+        '^libgphoto2.*': '', # libgphoto2-6, libgphoto2-camlibs, libgphoto2-port12
         'libgpuperfcnt1.4.0': '',
         'libhantro-vc8000e1': '',
         'libimxswpdm1': '',
         'libopenvg1': '',
+        'libprotobuf32': '',
         'librecorder-engine-1.0-0': '',
         'libtensorflow-lite2.11.1': '',
         'libubootenv0': [('libubootenv0.1','0.3.2')],
@@ -131,6 +134,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'pugixml': '',
         'python3-fcntl': '',
         'python3-flatbuffers': [('python3-flatbuffers','2.0.8')],
+        'python3-opencv': [('python3-opencv','4.6.0+dfsg')],
         'python3-protobuf': [('python3-protobuf','3.21.12')],
         'pytorch': [('python3-torch','1.13.1')],
         'rapid.*': '', # rapidjson, rapidopencl, rapidopenvx, rapidvulkan
