@@ -23,7 +23,18 @@ APTGET_EXTRA_PACKAGES += " \
     libglu1-mesa \
     python3.11 \
     python3-pip \
+    python3-pil \
+    python3-ply \
     python3-attr \
+    python3-idna \
+    python3-psutil \
+    python3-pyasn1 \
+    python3-urllib3 \
+    python3-certifi \
+    python3-requests \
+    python3-pycparser \
+    python3-decorator \
+    python3-jsonschema \
     python3-numpy \
     python3-sympy \
     python3-future \
@@ -32,6 +43,7 @@ APTGET_EXTRA_PACKAGES += " \
     python3-flatbuffers \
     python3-coloredlogs \
     python3-humanfriendly \
+    python3-ndg-httpsclient \
     python3-typing-extensions \
     2to3 \
     alsa-utils \
