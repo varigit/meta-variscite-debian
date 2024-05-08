@@ -33,6 +33,7 @@ python create_yoctopkgsprotect_debpackage()  {
         'alsa-state': '',
         'alsa-states': '',
         'arm-compute-library': [('libarm-compute-dev','20.08')],
+        'base-files-issue': '',
         'bcm43xx-utils': '',
         'bluealsa-aplay': [('bluez-alsa-utils','4.0.0')],
         'bluealsa': [('bluez-alsa-utils','4.0.0')],

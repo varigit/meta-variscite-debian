@@ -158,6 +158,10 @@ custom_install_tasks() {
     if [ -e ${D}${sysconfdir}/environment ]; then
         echo "PYTHONPATH=\"${PYTHON_SITEPACKAGES_DIR}\"" >> ${D}${sysconfdir}/environment
     fi
+
+    # Remove default issue and issue.net provided by Debian base-files,
+    # to let Yocto provide a customized one (base-files-issue).
+    rm -f ${D}${sysconfdir}/issue ${D}${sysconfdir}/issue.net
 }
 
 do_install:append() {
