@@ -3,6 +3,10 @@ require debian-base-image.inc
 inherit python3-dir
 SECTION = "devel"
 
+FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
+
+SRC_URI:append = " file://70-usb-net-interface.rules"
+
 APTGET_EXTRA_PACKAGES_REMOVE += " \
     libgles-dev \
     libegl-dev \
@@ -149,6 +153,10 @@ custom_install_tasks() {
     if [ -e ${D}/usr/share/drirc.d/00-mesa-defaults.conf ]; then
         rm -f ${D}/usr/share/drirc.d/00-mesa-defaults.conf
     fi
+
+    # Add predictable naming for usb interface
+    install -d ${D}${sysconfdir}/udev/rules.d
+    install -m 0644 ${WORKDIR}/70-usb-net-interface.rules ${D}${sysconfdir}/udev/rules.d/
 
     # Disable the assignment of the fixed network interface name
     install -d ${D}${sysconfdir}/systemd/network
